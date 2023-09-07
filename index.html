@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Magnifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bzoom_wrap">
+        <ul  id="bzoom">
+      <li>
+        <img class="bzoom_thumb_image" src="./a.jpeg" />
+                <img class="bzoom_big_image" src="./a.jpeg"/>
+      </li>
+      <li>
+        <img class="bzoom_thumb_image" src="./b.jpeg" />
+                <img class="bzoom_big_image" src="./b.jpeg"/>
+      </li>
+      <li>
+        <img class="bzoom_thumb_image" src="./d.jpeg" />
+                <img class="bzoom_big_image" src="./d.jpeg"/>
+      </li>
+      <li>
+        <img class="bzoom_thumb_image" src="./e.jpeg" />
+                <img class="bzoom_big_image" src="./e.jpeg"/>
+      </li>
+
+        </ul>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+       <script src="jqzoom.js"></script>
+      <script type="text/javascript">
+      $("#bzoom").zoom({
+       zoom_area_width: 300,
+        autoplay_interval :3000,
+        small_thumbs : 4,
+        autoplay : false
+     });
+    </script>
+  </div>
+</body>
+</html>
